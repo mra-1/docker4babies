@@ -1,0 +1,18 @@
+to format output of docker ps - docker ps will list containers
+docker ps --format="ID\t{{.ID}}\nNAME\t{{.Names}}\nIMAGE\t{{.Image}}\nPORTS\t{{.Ports}}\nCOMMAND\t{{.Command}}\nCREATED\t{{.CreatedAt}}\nSTATUS\t.{{.Status}}\n"
+
+to map port number to an existing port
+docker run -d -p newport:existingport image:latest -  docker run -d -p 8080:80 nginx:latest
+
+to name a container
+docker run --name "name" -d -p newport:existingport image:latest - docker run --name website -d -p 9000:80 nginx:latest = container name will be website
+
+to delete container
+docker rm "container name or container id"
+
+to delete all stopped containers 
+docker rm $(docker ps -aq)
+
+to forcefully kill all containers running or stopped
+docker rm -f $(docker ps -aq)
+
