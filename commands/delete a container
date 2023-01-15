@@ -1,1 +1,7 @@
-docker rm: Removes one or more containers. ================ docker remove webserver2 or container id
+docker rm: Removes one or more containers. ================ docker rm webserver2 or container id
+
+to delete all stopped containers 
+docker rm $(docker ps -aq)
+
+to forcefully delete all containers running or stopped
+docker rm -f $(docker ps -aq)
