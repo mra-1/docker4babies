@@ -1,0 +1,8 @@
+docker allows you to map a differnt port to your localhosts container port 
+-p is the flag needed to map a port to localhosts container port
+
+docker run -d -p 8080:80 nginx:latest
+
+you can also map multiple ports to your localhosts container port
+
+docker run -d -p 8080:80 -p 3000:80 nginx:latest ====== will allow both 8080 and 3000 to map to your localhosts container port
