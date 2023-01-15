@@ -1,0 +1,18 @@
+docker is a tool for running applications in an isolated enviroment
+docker will run the same in any machine since docker images contain OS,CODE,SOFTWARE needed 
+for a container to run its application in an isolated state.
+
+dockers has containers 
+containers are standalone, and executable software package that includes everything needed to run a piece of software(such as
+code and all dependencies)including the code, a runtime, libraries, environment variables, and config files.
+They are isolated from the host system and from other containers, ensuring that the software runs consistently
+across different environments.(multiple containers can run on the same machine using all resource to maxium potential)
+doesnt require a full OS within a container rather shares hosts OS and runs in isolation of other containers
+
+dockers also has images
+Docker image is a pre-built package(template) for creating an enviorment of your choice that contains all the files, libraries, 
+and dependencies needed to run a (application) piece of software. It is the executable package that runs in a Docker container.
+An image is built from a set of instructions called a Dockerfile, which defines how the image should be constructed 
+and what it should include. OS SOFTWARE APP CODE
+
+Containers are a running instance of an image
