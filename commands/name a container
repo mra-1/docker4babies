@@ -1,0 +1,1 @@
+docker run --name "name" -d "image"========================================= docker run --name webserver2 -d nginx
