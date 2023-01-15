@@ -1,0 +1,12 @@
+docker run: Runs a command in a new containers ============ docker run nginx
+docker start: Starts one or more stopped containers ======= docker start webserver2 or container id
+docker run --name ========================================= docker run --name webserver2 -d nginx
+docker stop: Stops one or more running containers. ======== docker stop webserver2 or container id
+docker ps: Lists all running containers. ================== docker ps
+docker rm: Removes one or more containers. ================ docker remove webserver2 or container id
+docker images: Lists all images on the local machine. ===== docker images
+docker pull: Pulls an image from a remote repository. ===== docker pull nginx
+docker push: Pushes an image to a remote repository.
+docker build: Builds an image from a Dockerfile.
+docker exec: Runs a command in a running container.
+docker logs: Shows the logs of a container.
