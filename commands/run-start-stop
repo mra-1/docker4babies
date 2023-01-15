@@ -1,0 +1,3 @@
+docker run -d: Runs a command in a new containers ========================== docker run -d nginx without -d it wont be detached
+docker start "container name or id" : Starts one or more stopped containers ======= docker start webserver2 or container id
+docker stop "container name or id": Stops one or more running containers. ======== docker stop webserver2 or container id
