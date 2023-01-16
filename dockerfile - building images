@@ -7,4 +7,14 @@ then we can run images built from dockerfiles
 
 documention need to build dockerfile ========= https://docs.docker.com/engine/reference/builder/
 
+To build a docker image you need to create the file-dockerfile within the directory/folder that has
+all dependencies for that docker image. 
 
+docker build --tag "image-name:version" . == the dot specifies for it to look for a dockerfile
+
+Dockerfile will have 
+FROM -- IS THE BASE IMAGE IT WILL USE TO PRODUCE YOUR OWN IMAGE
+ADD -- WILL ALL YOU TO ADD THE FILES FROM SOURCE PROVIDED TO DESTINATION SPECIFIED
+
+FROM NGINX:LATEST
+ADD . /USR/SHARE/NGINX/HTML
