@@ -1,0 +1,10 @@
+volumes allows you to share files and folder
+share data between host and containers and from container to container
+
+share files between host and containers using volume by running == -v is the flag to use a file or folder
+
+docker run --name webserver -v $(pwd):/usr/share/nginx/html:ro -d -p 8080:80 nginx
+or
+docker run --name webserver -v /path/to/file:/usr/share/nginx/html: -d -p 8080:80 nginx
+
+docker run --name "name" -v /source/path:destination/path:permissions -d -p mapport:existingport "image"
