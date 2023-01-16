@@ -1,4 +1,6 @@
 to share files and folders from container to container
 
-docker run --name "new-container" --volumes-from "existing-contianer-name" -d -p "mapport:
+docker run --name "new-container" --volumes-from "existing-contianer-name" -d -p "mapport:exisitingport" "image"
+
+example--
 docker run --name webserver2 --volumes-from webserver -d -p 4040:80 nginx
