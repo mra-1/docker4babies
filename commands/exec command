@@ -1,0 +1,5 @@
+docker exec allows you to enter the contaniner and check files
+
+docker exec -it "container name" bash
+
+docker exec -it webserver2 bash
