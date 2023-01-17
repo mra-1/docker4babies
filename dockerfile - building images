@@ -10,7 +10,8 @@ documention need to build dockerfile ========= https://docs.docker.com/engine/re
 To build a docker image you need to create the file-dockerfile within the directory/folder that has
 all dependencies for that docker image. 
 
-docker build --tag "image-name:version" . == the dot specifies for it to look for a dockerfile
+docker build --tag "image-name:version" . == 
+the dot specifies for it to look for a dockerfile or you can specify the path to the file
 
 Dockerfile will have 
 FROM -- IS THE BASE IMAGE IT WILL USE TO PRODUCE YOUR OWN IMAGE
