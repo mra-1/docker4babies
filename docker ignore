@@ -1,0 +1,6 @@
+docker ignore file allows you to ignore files that you dont want in your image
+
+to have a working .dockerignore file you need to make the .dockerignore in the directory that holds your image
+
+within the .dockerignore you will specify folders and files that your docker image doesnt need.
+
